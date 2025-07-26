@@ -7,3 +7,6 @@ sed -i 's/#GRUB_DISABLE_OS_PROBER/GRUB_DISABLE_OS_PROBER/g' /etc/default/grub
 
 sudo pacman -Syu os-prober
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+sudo pacman -Syu zsh curl git
+chsh -s $(which zsh)
