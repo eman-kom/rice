@@ -32,4 +32,12 @@ curl -f https://zed.dev/install.sh | sh
 export "PATH=$HOME/.local/bin:$PATH" > ~/.zshrc
 source ~/.zshrc
 
+git clone https://github.com/danyspin97/wpaperd
+cd wpaperd
+cargo build --release
+cd target/release
+mv wpaperd ~/.local/bin/wpaperd
+mv wpaperctl ~/.local/bin/
+cd ~
+
 cp -fR ./dotfiles/config ~/.config

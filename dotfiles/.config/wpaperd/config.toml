@@ -1,0 +1,6 @@
+[default]
+mode="fit"
+duration="30s"
+
+[eDP-1]
+path="/home/user/Pictures"
