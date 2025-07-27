@@ -9,14 +9,15 @@ sudo pacman -Syu kitty \
                  libnewt
 
 # install the components
-sudo pacman -Syu hyprland \
-                 hyprpaper \
-                 wofi \
-                 nemo \
-                 waybar \
-                 sddm \
-                 qt5-wayland \
-                 qt6-wayland \
+sudo pacman -Syu --no-confirm hyprland \
+                             hyprpaper \
+                             wofi \
+                             nemo \
+                             waybar \
+                             sddm \
+                             qt5-wayland \
+                             qt6-wayland \
+                             nerd-fonts
 
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
