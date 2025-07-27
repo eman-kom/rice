@@ -7,7 +7,6 @@ sudo pacman -Syu --no-confirm kitty \
 
 # install the components
 sudo pacman -Syu --no-confirm hyprland \
-                              hyprpaper \
                               wofi \
                               nemo \
                               waybar \
@@ -20,7 +19,8 @@ sudo pacman -Syu --no-confirm hyprland \
                               pipewire-pulse \
                               pipewire-alsa \
                               playerctl \
-                              dunst 
+                              dunst \
+                              btop
 
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
