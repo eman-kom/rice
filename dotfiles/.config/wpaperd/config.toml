@@ -1,5 +1,5 @@
 [default]
-mode="fit"
+mode="center"
 duration="30s"
 
 [eDP-1]
