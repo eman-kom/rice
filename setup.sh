@@ -3,31 +3,24 @@
 # kitty is a pre-requisite to hyprland
 sudo pacman -Syu --no-confirm kitty \
                               uwsm \
-                              libnewt
+                              libnewt \
+                              dunst \
+                              btop
 
 # install the components
 sudo pacman -Syu --no-confirm hyprland \
                               wofi \
                               nemo \
                               waybar \
-                              sddm \
-                              qt5-wayland \
-                              qt6-wayland \
-                              nerd-fonts \
+                              ghostty
+
+# install waybar dependencies
+sudo pacman -Syu --no-confirm nerd-fonts \
                               brightnessctl \
                               power-profiles-daemon \
-                              pipewire-pulse \
-                              pipewire-alsa \
-                              playerctl \
-                              dunst \
-                              btop
+                              playerctl
 
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-
-pacman -Syu ghostty git 
+pacman -Syu git 
 curl -f https://zed.dev/install.sh | sh
 export "PATH=$HOME/.local/bin:$PATH" > ~/.zshrc
 source ~/.zshrc
